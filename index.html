@@ -20,8 +20,8 @@
         <nav>
             <a href="index.html"><img src="https://static.vecteezy.com/system/resources/thumbnails/006/470/647/small_2x/university-education-logo-design-template-free-vector.jpg" alt="logo"></a>
 
-            <div class="nav-links">
-                <i class="fa-solid fa-xmark nav-icon"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark nav-icon" onclick="hiddenMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -30,7 +30,7 @@
                     <li><a href="">CONtACT</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars nav-icon"></i>
+            <i class="fa-solid fa-bars nav-icon" onclick="showMenu()"></i>
         </nav>
         <!-- text area in banner  -->
         <div class="text-box">
@@ -39,6 +39,18 @@
             <a href="" class="banner-btn">Visit more know about us </a>
         </div>
     </section>
+
+
+
+    <script>
+        let navLinks=document.getElementById('navLinks')
+        function showMenu(){
+            navLinks.style.right='0'
+        }
+        function hiddenMenu(){
+            navLinks.style.right='-200px'
+        }
+    </script>
 </body>
 
 </html>
